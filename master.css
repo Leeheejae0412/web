@@ -1,0 +1,151 @@
+/* 상단 메뉴 */
+
+:root {
+  --text-color: #f0f4f5;
+  --background-color: #263343;
+  --accent-color: #d49466;
+}
+
+* {box-sizing: border-box;}
+
+body {margin: 0; font-family: 'Roboto', sans-serif;}
+
+a {text-decoration: none; color: #707070;}
+
+/* 네비 콘테이너 */
+.navbar {display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background-color: #F3F3F3;}
+
+/* 로고 */
+.navbar__logo {font-size: 24px; color:#707070;}
+
+.navbar__logo i {color: #707070;}
+
+/* 메뉴 */
+.navbar__menu {display: flex; padding-left: 0; list-style: none;}
+
+.navbar__menu li {padding: 8px 12px;}
+
+.navbar__menu li:hover {background-color: #C6C6C6; border-radius: 4px;}
+
+.navbar__icons {list-style: none; color: #707070; display: flex; padding-left: 0;}
+
+/* 아이콘 */
+.navbar__icons li {padding: 8px 12px;}
+
+/* Toggle button */
+.navbar__toggleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: #707070;
+}
+
+/* For small screen */
+@media screen and (max-width: 768px) {
+  /* Nav container */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+
+  /* Menu */
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar__menu a {
+    /* Fill in an entire line so that user can click on any space */
+    display: block;
+  }
+
+  /* Icons */
+  .navbar__icons {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* Toggle button */
+  .navbar__toggleBtn {
+    display: block;
+  }
+
+  /* When toggle button is clicked - active state */
+  .navbar__menu.active,
+  .navbar__icons.active {
+    display: flex;
+  }
+}
+
+
+
+/* 메인 페이지 */
+
+
+
+.bg0 {width: 100%; height: 750px; background-size: cover; background-position: center; background-attachment: fixed; background-image: url(img/bg0.png); }
+
+.bg1 {width: 100%; height: 750px; background-size: cover; background-position: center;  background-attachment: fixed; background-image: url(img/bg1.png);}
+
+.bg2 {width: 100%; height: 750px; background-size: cover; background-position: center;  background-attachment: fixed; background-image: url(img/bg2.png);}
+
+.bg3 {width: 100%; height: 750px; background-size: cover; background-position: center; background-attachment: fixed; background-image: url(img/bg3.png);}
+
+.bg4 {width: 100%; height: 750px; background-size: cover; background-position: center; background-attachment: fixed; background-image: url(img/bg4.png);}
+
+.bg5 {width: 100%; height: 750px; background-size: cover; background-position: center; background-attachment: fixed; background-image: url(img/bg5.png);}
+
+
+
+.bg_ext {display: flex; justify-content: center; align-items: center;}
+
+.tit1 {position: relative; display: inline-block; left: 50%; top: 50%; transform: translateX(-55%) translateY(-50%);}
+
+footer{width: 100%;height: 120px;background-color: #292929;display: flex;justify-content: center;align-items: center;}
+.f_wrap{width: 1024px;height: 40px;border: 0px solid red;display: flex;justify-content: space-between;align-items: center;}
+.f_left{display: inline-block;width: 200px;height: 40px;border: 0px solid blue;}
+.f_right{display: inline-block;width: 400px;height: 40px;border: 0px solid blue;font-family: 'Noto Sans KR', sans-serif;font-size: 18px;font-weight: 200;letter-spacing: -1.5px;color: #CECECE;text-align: right;}
+
+
+/* 서브페이지 1*/
+.sub1_top{width: 100%;height: 800px; background-position: center ;background-size: cover; display: flex;justify-content: center;align-items: center;}
+.sub01_cont{width: 100%;height: 3640px; display: flex;justify-content: center;}
+
+
+/*서브페이지 2*/
+
+.sub02_top{width: 100%;height: 800px; background-position: center ;background-size: cover; display: flex;justify-content: center;align-items: center;}
+
+
+
+
+
+
+/*서브페이지 3*/
+
+.sub03_top{width: 100%;height: 800px; background-position: center ;background-size: cover; display: flex;justify-content: center;align-items: center;}
+
+.video{ display: flex;justify-content: center;
+
+
+}
+
+
+
+
+
+
+/*서브페이지 4*/
+
+.sub04_top{width: 100%;height: 800px; background-position: center ;background-size: cover; display: flex;justify-content: center;align-items: center;}
+.sub04_cont{width: 100%;height: 3096px; display: flex;justify-content: center;}
+
+/*서브페이지 5*/
+
+.sub05_top{width: 100%;height: 800px; background-position: center ;background-size: cover; display: flex;justify-content: center;align-items: center;}
+.sub05_cont{width: 100%;height: 3456px; display: flex;justify-content: center;}
